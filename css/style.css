@@ -47,3 +47,74 @@
         text-decoration: double;
         color: rgb(114, 184, 92);
     }
+/*----------------------------------------*/
+/* Main */
+
+/* .container__hero{
+
+}
+ */
+.imagen__hero{
+    height: 60vh;
+    background-image: url("../imagenes/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.imagen__hero h2{
+    color: rgb(245, 238, 238);
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.imagen__hero p{
+    margin-top: 2em;
+    color: rgb(245, 238, 238);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px ;
+}
+
+/*---Paquetes---*/
+
+.paquetes__hero{
+    margin-top: 20px;
+    background-color: rgb(238, 229, 222);
+    width:  90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paquetes__hero h3{
+    font-family: "Oswald" ;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.paquete__galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+}
+
+.paquete__galeria .galeria__card{
+
+    
+}
+
+.card{
+    width: 18rem;
+    border: solid 2px black;
+    padding: 10px;
+    margin: 10px;
+}
