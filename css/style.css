@@ -41,7 +41,7 @@
 .cabecera .menu .menu__item a{
     text-decoration: none;
     color: rgb(47, 14, 78);
-    transition: all .8s;
+    transition: all .5s;
 }
     .cabecera .menu .menu__item  a:hover{
         text-decoration: double;
