@@ -68,8 +68,7 @@
     padding-inline: 200px;
     text-align: center;
     margin-top: 5px;
-    margin-left: 60px;
-    margin-right: 60px;
+
 }
 
 .imagen__hero h2{
@@ -89,7 +88,6 @@
 
 .paquetes__hero{
     margin-top: 20px;
-    
     width:  90%;
     margin-left: auto;
     margin-right: auto;
@@ -100,11 +98,7 @@
     font-family: "Oswald" ;
     font-size: 25px;
     font-weight: bold;
-    color: black;
-}
-
-.paquete__galeria{
-    
+    color: rgb(58, 56, 56);
 }
 
 .paquete__galeria .galeria__card{
@@ -117,13 +111,13 @@
 .cards{
    background-color: #def3f7;
    font-family: "Roboto";
-   border: solid 0.7px black;
-   border-radius: 5px;
+   border: solid 2px #cdd4e5;
+   border-radius: 4px;
    margin-bottom: 1rem;
    transition: .5s;
 }
     .paquetes__hero .galeria__card .cards:hover{
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     }
 
 .cards img{
@@ -137,3 +131,46 @@
     gap: 1rem;
 }
 
+
+
+/*-------------Servicios-----------*/
+
+.servicios__hero{
+    margin-top: 20px;
+    width:  90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.servicios__cards{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: stretch;
+}
+
+.servicios__card{
+    border: solid 1px #17174e ;
+    border-radius: 30px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all .5s;
+}
+    .servicios__card h3{
+        font-family: "Oswald";
+        font-size: 20px;
+        color: #17174e;
+        text-align: center;
+    }
+    .servicios__card p{
+        font-family: "Roboto";
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.534);
+    }
+
+    .servicios__card:hover{
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
