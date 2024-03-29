@@ -47,3 +47,92 @@
         text-decoration: double;
         color: rgb(114, 184, 92);
     }
+
+/*----------------------------------------*/
+/* Main */
+
+/* .container__hero{
+}
+ */
+ .imagen__hero{
+    height: 60vh;
+    background-image: url("../imagenes/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.imagen__hero h2{
+    color: rgb(245, 238, 238);
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.imagen__hero p{
+    margin-top: 2em;
+    color: rgb(245, 238, 238);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px ;
+}
+
+/*---Paquetes---*/
+
+.paquetes__hero{
+    margin-top: 20px;
+    
+    width:  90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.paquetes__hero h3{
+    font-family: "Oswald" ;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.paquete__galeria{
+    
+}
+
+.paquete__galeria .galeria__card{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: stretch;
+}
+
+.cards{
+   background-color: #def3f7;
+   font-family: "Roboto";
+   border: solid 0.7px black;
+   border-radius: 5px;
+   margin-bottom: 1rem;
+   transition: .5s;
+}
+    .paquetes__hero .galeria__card .cards:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+.cards img{
+    width: 100%;
+    height: 50vh;
+}
+.card{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
