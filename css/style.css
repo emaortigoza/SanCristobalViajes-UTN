@@ -101,30 +101,47 @@
     font-size: 25px;
     font-weight: bold;
     color: rgb(58, 56, 56);
+    margin-bottom: 20px;
 }
 
-.paquete__galeria .galeria__card{
-    display: flex;
+ .galeria__card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "caja1 caja2 caja3 caja4"
+    ;
     gap: 1rem;
-    padding: 1rem;
-    align-items: stretch;
+    margin-bottom: 1rem;
 }
 
 .cards{
+   height: 100%;
    background-color: #def3f7;
    font-family: "Roboto";
    border: solid 2px #cdd4e5;
    border-radius: 4px;
-   margin-bottom: 1rem;
    transition: .5s;
 }
     .paquetes__hero .galeria__card .cards:hover{
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     }
+.caja1{
+    grid-area: caja1;
+}
+.caja2{
+    grid-area: caja2;
+}
+.caja3{
+    grid-area: caja3;
+}
+.caja4{
+    grid-area: caja4;
+}
 
 .cards img{
     width: 100%;
-    height: 50vh;
+    height: 40vh;
 }
 .card{
     padding: 1rem;
@@ -146,8 +163,14 @@
 }
 
 .servicios__cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "caja1 caja2 caja3 caja4"
+    ;
     gap: 1rem;
+    margin-bottom: 1rem;
     padding: 1rem;
     align-items: stretch;
 }
@@ -243,25 +266,6 @@ footer .logo{
 
 /*-----------Mediaqueris------------*/
 
-@media screen and (max-width: 480px) {
-    .cabecera{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-        .cabecera .menu{
-            margin-top: 1rem;
-            flex-direction: column;
-        }
-
-    .paquete__galeria .galeria__card{
-        flex-direction: column;
-    }
-
-    .servicios__cards{
-        flex-direction: column;
-    }
-}
 
 @media  screen and (max-width: 768px) {
     .cabecera{
@@ -273,17 +277,60 @@ footer .logo{
             margin-top: 1rem;
         }
 
-        .paquete__galeria .galeria__card{
-            flex-direction: row;
-            flex-wrap: wrap;
+    .galeria__card{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "caja1 caja2"
+        "caja3 caja4"
+        ;
+
+            
         }
         
     
         .servicios__cards, .servicios__card{
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            width: 50%;
+            grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "caja1 caja2"
+        "caja3 caja4"
+        ;
         }
         
+}
+
+@media screen and (max-width: 500px) {
+    .cabecera{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .cabecera .menu{
+            margin-top: 1rem;
+            flex-direction: column;
+        }
+
+     .galeria__card{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "caja1"
+        "caja2"
+        "caja3"
+        "caja4"
+        ;
+    }
+    
+
+    .servicios__cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "caja1"
+        "caja2"
+        "caja3"
+        "caja4"
+        ;
+    }
 }
